@@ -13,7 +13,6 @@
 		1F5DEBF01C994B0C006293F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5DEBEE1C994B0C006293F6 /* Main.storyboard */; };
 		1F5DEBF21C994B0C006293F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F5DEBF11C994B0C006293F6 /* Assets.xcassets */; };
 		1F5DEBF51C994B0C006293F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5DEBF31C994B0C006293F6 /* LaunchScreen.storyboard */; };
-		1F5DEC001C994B0C006293F6 /* BabylonTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5DEBFF1C994B0C006293F6 /* BabylonTestTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +37,6 @@
 		1F5DEBF41C994B0C006293F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F5DEBF61C994B0C006293F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F5DEBFB1C994B0C006293F6 /* BabylonTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabylonTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F5DEBFF1C994B0C006293F6 /* BabylonTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BabylonTestTests.m; sourceTree = "<group>"; };
 		1F5DEC011C994B0C006293F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,7 +103,6 @@
 		1F5DEBFE1C994B0C006293F6 /* BabylonTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				1F5DEBFF1C994B0C006293F6 /* BabylonTestTests.m */,
 				1F5DEC011C994B0C006293F6 /* Info.plist */,
 			);
 			path = BabylonTestTests;
@@ -221,7 +218,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F5DEC001C994B0C006293F6 /* BabylonTestTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
