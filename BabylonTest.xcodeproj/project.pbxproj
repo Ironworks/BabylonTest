@@ -13,6 +13,7 @@
 		1F5DEBF01C994B0C006293F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5DEBEE1C994B0C006293F6 /* Main.storyboard */; };
 		1F5DEBF21C994B0C006293F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F5DEBF11C994B0C006293F6 /* Assets.xcassets */; };
 		1F5DEBF51C994B0C006293F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5DEBF31C994B0C006293F6 /* LaunchScreen.storyboard */; };
+		A41EC2BF033BBFA72E67EBCB /* libPods-BabylonTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECAF8A4C4ED2DBBE2AC1B596 /* libPods-BabylonTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,9 @@
 		1F5DEBF61C994B0C006293F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F5DEBFB1C994B0C006293F6 /* BabylonTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabylonTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5DEC011C994B0C006293F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		292AE7BE345E9FE9B78F4B7E /* Pods-BabylonTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BabylonTest/Pods-BabylonTest.debug.xcconfig"; sourceTree = "<group>"; };
+		DD9F890FAEB3D0C332564660 /* Pods-BabylonTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-BabylonTest/Pods-BabylonTest.release.xcconfig"; sourceTree = "<group>"; };
+		ECAF8A4C4ED2DBBE2AC1B596 /* libPods-BabylonTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BabylonTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41EC2BF033BBFA72E67EBCB /* libPods-BabylonTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +63,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C9EED940D1AF67914869BC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECAF8A4C4ED2DBBE2AC1B596 /* libPods-BabylonTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1F5DEBD91C994B0C006293F6 = {
 			isa = PBXGroup;
 			children = (
 				1F5DEBE41C994B0C006293F6 /* BabylonTest */,
 				1F5DEBFE1C994B0C006293F6 /* BabylonTestTests */,
 				1F5DEBE31C994B0C006293F6 /* Products */,
+				DB4C64B8B81776A906550043 /* Pods */,
+				1C9EED940D1AF67914869BC9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +123,15 @@
 			path = BabylonTestTests;
 			sourceTree = "<group>";
 		};
+		DB4C64B8B81776A906550043 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				292AE7BE345E9FE9B78F4B7E /* Pods-BabylonTest.debug.xcconfig */,
+				DD9F890FAEB3D0C332564660 /* Pods-BabylonTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,9 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F5DEC041C994B0C006293F6 /* Build configuration list for PBXNativeTarget "BabylonTest" */;
 			buildPhases = (
+				706C9D74C1A3F4704D12111D /* Check Pods Manifest.lock */,
 				1F5DEBDE1C994B0C006293F6 /* Sources */,
 				1F5DEBDF1C994B0C006293F6 /* Frameworks */,
 				1F5DEBE01C994B0C006293F6 /* Resources */,
+				F56235962BA056661ED3495F /* Embed Pods Frameworks */,
+				91BFA376292EDD24CBCD7AE9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,6 +229,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		706C9D74C1A3F4704D12111D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		91BFA376292EDD24CBCD7AE9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BabylonTest/Pods-BabylonTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F56235962BA056661ED3495F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BabylonTest/Pods-BabylonTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F5DEBDE1C994B0C006293F6 /* Sources */ = {
@@ -333,6 +408,7 @@
 		};
 		1F5DEC051C994B0C006293F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292AE7BE345E9FE9B78F4B7E /* Pods-BabylonTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BabylonTest/Info.plist;
@@ -344,6 +420,7 @@
 		};
 		1F5DEC061C994B0C006293F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD9F890FAEB3D0C332564660 /* Pods-BabylonTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BabylonTest/Info.plist;
@@ -396,6 +473,7 @@
 				1F5DEC061C994B0C006293F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F5DEC071C994B0C006293F6 /* Build configuration list for PBXNativeTarget "BabylonTestTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +482,7 @@
 				1F5DEC091C994B0C006293F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
