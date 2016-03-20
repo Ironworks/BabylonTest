@@ -13,6 +13,7 @@
 		1F5DEBF01C994B0C006293F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5DEBEE1C994B0C006293F6 /* Main.storyboard */; };
 		1F5DEBF21C994B0C006293F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F5DEBF11C994B0C006293F6 /* Assets.xcassets */; };
 		1F5DEBF51C994B0C006293F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5DEBF31C994B0C006293F6 /* LaunchScreen.storyboard */; };
+		1FDBB0C51C9BEBA60075A174 /* CoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDBB0C41C9BEBA60075A174 /* CoreDataTests.m */; };
 		A41EC2BF033BBFA72E67EBCB /* libPods-BabylonTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECAF8A4C4ED2DBBE2AC1B596 /* libPods-BabylonTest.a */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,9 @@
 		1F5DEBF61C994B0C006293F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F5DEBFB1C994B0C006293F6 /* BabylonTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BabylonTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5DEC011C994B0C006293F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FDBB0C31C9BEB350075A174 /* BabylonTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BabylonTest-Prefix.pch"; sourceTree = "<group>"; };
+		1FDBB0C41C9BEBA60075A174 /* CoreDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTests.m; sourceTree = "<group>"; };
+		1FE865951C9BED0100A78A72 /* libPods-BabylonTest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-BabylonTest.a"; path = "Pods/../build/Debug-iphoneos/libPods-BabylonTest.a"; sourceTree = "<group>"; };
 		292AE7BE345E9FE9B78F4B7E /* Pods-BabylonTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BabylonTest/Pods-BabylonTest.debug.xcconfig"; sourceTree = "<group>"; };
 		DD9F890FAEB3D0C332564660 /* Pods-BabylonTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-BabylonTest/Pods-BabylonTest.release.xcconfig"; sourceTree = "<group>"; };
 		ECAF8A4C4ED2DBBE2AC1B596 /* libPods-BabylonTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BabylonTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +70,7 @@
 		1C9EED940D1AF67914869BC9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1FE865951C9BED0100A78A72 /* libPods-BabylonTest.a */,
 				ECAF8A4C4ED2DBBE2AC1B596 /* libPods-BabylonTest.a */,
 			);
 			name = Frameworks;
@@ -94,6 +99,7 @@
 		1F5DEBE41C994B0C006293F6 /* BabylonTest */ = {
 			isa = PBXGroup;
 			children = (
+				1FE865971C9BF20F00A78A72 /* CoreData */,
 				1F5DEBE81C994B0C006293F6 /* AppDelegate.h */,
 				1F5DEBE91C994B0C006293F6 /* AppDelegate.m */,
 				1F5DEBEB1C994B0C006293F6 /* ViewController.h */,
@@ -110,6 +116,7 @@
 		1F5DEBE51C994B0C006293F6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1FDBB0C31C9BEB350075A174 /* BabylonTest-Prefix.pch */,
 				1F5DEBE61C994B0C006293F6 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -119,8 +126,16 @@
 			isa = PBXGroup;
 			children = (
 				1F5DEC011C994B0C006293F6 /* Info.plist */,
+				1FDBB0C41C9BEBA60075A174 /* CoreDataTests.m */,
 			);
 			path = BabylonTestTests;
+			sourceTree = "<group>";
+		};
+		1FE865971C9BF20F00A78A72 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CoreData;
 			sourceTree = "<group>";
 		};
 		DB4C64B8B81776A906550043 /* Pods */ = {
@@ -293,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FDBB0C51C9BEBA60075A174 /* CoreDataTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +427,8 @@
 			baseConfigurationReference = 292AE7BE345E9FE9B78F4B7E /* Pods-BabylonTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT)/BabylonTest-Prefix.pch";
 				INFOPLIST_FILE = BabylonTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.ironworksmedialimited.BabylonTest;
@@ -423,6 +441,8 @@
 			baseConfigurationReference = DD9F890FAEB3D0C332564660 /* Pods-BabylonTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT)/BabylonTest-Prefix.pch";
 				INFOPLIST_FILE = BabylonTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.ironworksmedialimited.BabylonTest;
@@ -432,10 +452,17 @@
 		};
 		1F5DEC081C994B0C006293F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 292AE7BE345E9FE9B78F4B7E /* Pods-BabylonTest.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT)/BabylonTest-Prefix.pch";
 				INFOPLIST_FILE = BabylonTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.ironworksmedialimited.BabylonTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BabylonTest.app/BabylonTest";
@@ -446,8 +473,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT)/BabylonTest-Prefix.pch";
 				INFOPLIST_FILE = BabylonTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.ironworksmedialimited.BabylonTestTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BabylonTest.app/BabylonTest";
