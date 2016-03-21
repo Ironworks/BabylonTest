@@ -15,6 +15,32 @@
 		1F5DEBF51C994B0C006293F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5DEBF31C994B0C006293F6 /* LaunchScreen.storyboard */; };
 		1FDBB0C51C9BEBA60075A174 /* CoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDBB0C41C9BEBA60075A174 /* CoreDataTests.m */; };
 		A41EC2BF033BBFA72E67EBCB /* libPods-BabylonTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECAF8A4C4ED2DBBE2AC1B596 /* libPods-BabylonTest.a */; };
+		F08B13611C9F3CF500146F99 /* BabylonTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F08B135F1C9F3CF500146F99 /* BabylonTest.xcdatamodeld */; };
+		F08B13621C9F3CF500146F99 /* BabylonTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F08B135F1C9F3CF500146F99 /* BabylonTest.xcdatamodeld */; };
+		F08B13671C9F3D5F00146F99 /* Post+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B13641C9F3D5F00146F99 /* Post+CoreDataProperties.m */; };
+		F08B13681C9F3D5F00146F99 /* Post+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B13641C9F3D5F00146F99 /* Post+CoreDataProperties.m */; };
+		F08B13691C9F3D5F00146F99 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B13661C9F3D5F00146F99 /* Post.m */; };
+		F08B136A1C9F3D5F00146F99 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B13661C9F3D5F00146F99 /* Post.m */; };
+		F08B137B1C9F56BD00146F99 /* Comments+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B136C1C9F56BD00146F99 /* Comments+CoreDataProperties.m */; };
+		F08B137C1C9F56BD00146F99 /* Comments+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B136C1C9F56BD00146F99 /* Comments+CoreDataProperties.m */; };
+		F08B137D1C9F56BD00146F99 /* Comments.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B136E1C9F56BD00146F99 /* Comments.m */; };
+		F08B137E1C9F56BD00146F99 /* Comments.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B136E1C9F56BD00146F99 /* Comments.m */; };
+		F08B137F1C9F56BD00146F99 /* Address+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B13701C9F56BD00146F99 /* Address+CoreDataProperties.m */; };
+		F08B13801C9F56BD00146F99 /* Address+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B13701C9F56BD00146F99 /* Address+CoreDataProperties.m */; };
+		F08B13811C9F56BD00146F99 /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B13721C9F56BD00146F99 /* Address.m */; };
+		F08B13821C9F56BD00146F99 /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B13721C9F56BD00146F99 /* Address.m */; };
+		F08B13831C9F56BD00146F99 /* Geo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B13741C9F56BD00146F99 /* Geo+CoreDataProperties.m */; };
+		F08B13841C9F56BD00146F99 /* Geo+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B13741C9F56BD00146F99 /* Geo+CoreDataProperties.m */; };
+		F08B13851C9F56BD00146F99 /* Geo.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B13761C9F56BD00146F99 /* Geo.m */; };
+		F08B13861C9F56BD00146F99 /* Geo.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B13761C9F56BD00146F99 /* Geo.m */; };
+		F08B13871C9F56BD00146F99 /* Users+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B13781C9F56BD00146F99 /* Users+CoreDataProperties.m */; };
+		F08B13881C9F56BD00146F99 /* Users+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B13781C9F56BD00146F99 /* Users+CoreDataProperties.m */; };
+		F08B13891C9F56BD00146F99 /* Users.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B137A1C9F56BD00146F99 /* Users.m */; };
+		F08B138A1C9F56BD00146F99 /* Users.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B137A1C9F56BD00146F99 /* Users.m */; };
+		F08B138F1C9F770D00146F99 /* Company+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B138C1C9F770D00146F99 /* Company+CoreDataProperties.m */; };
+		F08B13901C9F770D00146F99 /* Company+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B138C1C9F770D00146F99 /* Company+CoreDataProperties.m */; };
+		F08B13911C9F770D00146F99 /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B138E1C9F770D00146F99 /* Company.m */; };
+		F08B13921C9F770D00146F99 /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = F08B138E1C9F770D00146F99 /* Company.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +72,31 @@
 		292AE7BE345E9FE9B78F4B7E /* Pods-BabylonTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BabylonTest/Pods-BabylonTest.debug.xcconfig"; sourceTree = "<group>"; };
 		DD9F890FAEB3D0C332564660 /* Pods-BabylonTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-BabylonTest/Pods-BabylonTest.release.xcconfig"; sourceTree = "<group>"; };
 		ECAF8A4C4ED2DBBE2AC1B596 /* libPods-BabylonTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BabylonTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F08B13601C9F3CF500146F99 /* BabylonTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BabylonTest.xcdatamodel; sourceTree = "<group>"; };
+		F08B13631C9F3D5F00146F99 /* Post+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Post+CoreDataProperties.h"; path = "CoreData/Post+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F08B13641C9F3D5F00146F99 /* Post+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Post+CoreDataProperties.m"; path = "CoreData/Post+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F08B13651C9F3D5F00146F99 /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Post.h; path = CoreData/Post.h; sourceTree = "<group>"; };
+		F08B13661C9F3D5F00146F99 /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Post.m; path = CoreData/Post.m; sourceTree = "<group>"; };
+		F08B136B1C9F56BD00146F99 /* Comments+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Comments+CoreDataProperties.h"; path = "CoreData/Comments+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F08B136C1C9F56BD00146F99 /* Comments+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Comments+CoreDataProperties.m"; path = "CoreData/Comments+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F08B136D1C9F56BD00146F99 /* Comments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Comments.h; path = CoreData/Comments.h; sourceTree = "<group>"; };
+		F08B136E1C9F56BD00146F99 /* Comments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Comments.m; path = CoreData/Comments.m; sourceTree = "<group>"; };
+		F08B136F1C9F56BD00146F99 /* Address+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Address+CoreDataProperties.h"; path = "CoreData/Address+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F08B13701C9F56BD00146F99 /* Address+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Address+CoreDataProperties.m"; path = "CoreData/Address+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F08B13711C9F56BD00146F99 /* Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Address.h; path = CoreData/Address.h; sourceTree = "<group>"; };
+		F08B13721C9F56BD00146F99 /* Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Address.m; path = CoreData/Address.m; sourceTree = "<group>"; };
+		F08B13731C9F56BD00146F99 /* Geo+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Geo+CoreDataProperties.h"; path = "CoreData/Geo+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F08B13741C9F56BD00146F99 /* Geo+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Geo+CoreDataProperties.m"; path = "CoreData/Geo+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F08B13751C9F56BD00146F99 /* Geo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Geo.h; path = CoreData/Geo.h; sourceTree = "<group>"; };
+		F08B13761C9F56BD00146F99 /* Geo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Geo.m; path = CoreData/Geo.m; sourceTree = "<group>"; };
+		F08B13771C9F56BD00146F99 /* Users+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Users+CoreDataProperties.h"; path = "CoreData/Users+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F08B13781C9F56BD00146F99 /* Users+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Users+CoreDataProperties.m"; path = "CoreData/Users+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F08B13791C9F56BD00146F99 /* Users.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Users.h; path = CoreData/Users.h; sourceTree = "<group>"; };
+		F08B137A1C9F56BD00146F99 /* Users.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Users.m; path = CoreData/Users.m; sourceTree = "<group>"; };
+		F08B138B1C9F770D00146F99 /* Company+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Company+CoreDataProperties.h"; path = "CoreData/Company+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F08B138C1C9F770D00146F99 /* Company+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Company+CoreDataProperties.m"; path = "CoreData/Company+CoreDataProperties.m"; sourceTree = "<group>"; };
+		F08B138D1C9F770D00146F99 /* Company.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Company.h; path = CoreData/Company.h; sourceTree = "<group>"; };
+		F08B138E1C9F770D00146F99 /* Company.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Company.m; path = CoreData/Company.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +185,31 @@
 		1FE865971C9BF20F00A78A72 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				F08B138B1C9F770D00146F99 /* Company+CoreDataProperties.h */,
+				F08B138C1C9F770D00146F99 /* Company+CoreDataProperties.m */,
+				F08B138D1C9F770D00146F99 /* Company.h */,
+				F08B138E1C9F770D00146F99 /* Company.m */,
+				F08B136B1C9F56BD00146F99 /* Comments+CoreDataProperties.h */,
+				F08B136C1C9F56BD00146F99 /* Comments+CoreDataProperties.m */,
+				F08B136D1C9F56BD00146F99 /* Comments.h */,
+				F08B136E1C9F56BD00146F99 /* Comments.m */,
+				F08B136F1C9F56BD00146F99 /* Address+CoreDataProperties.h */,
+				F08B13701C9F56BD00146F99 /* Address+CoreDataProperties.m */,
+				F08B13711C9F56BD00146F99 /* Address.h */,
+				F08B13721C9F56BD00146F99 /* Address.m */,
+				F08B13731C9F56BD00146F99 /* Geo+CoreDataProperties.h */,
+				F08B13741C9F56BD00146F99 /* Geo+CoreDataProperties.m */,
+				F08B13751C9F56BD00146F99 /* Geo.h */,
+				F08B13761C9F56BD00146F99 /* Geo.m */,
+				F08B13771C9F56BD00146F99 /* Users+CoreDataProperties.h */,
+				F08B13781C9F56BD00146F99 /* Users+CoreDataProperties.m */,
+				F08B13791C9F56BD00146F99 /* Users.h */,
+				F08B137A1C9F56BD00146F99 /* Users.m */,
+				F08B13631C9F3D5F00146F99 /* Post+CoreDataProperties.h */,
+				F08B13641C9F3D5F00146F99 /* Post+CoreDataProperties.m */,
+				F08B13651C9F3D5F00146F99 /* Post.h */,
+				F08B13661C9F3D5F00146F99 /* Post.m */,
+				F08B135F1C9F3CF500146F99 /* BabylonTest.xcdatamodeld */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -298,9 +374,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F08B13831C9F56BD00146F99 /* Geo+CoreDataProperties.m in Sources */,
 				1F5DEBED1C994B0C006293F6 /* ViewController.m in Sources */,
+				F08B13691C9F3D5F00146F99 /* Post.m in Sources */,
+				F08B13851C9F56BD00146F99 /* Geo.m in Sources */,
+				F08B138F1C9F770D00146F99 /* Company+CoreDataProperties.m in Sources */,
 				1F5DEBEA1C994B0C006293F6 /* AppDelegate.m in Sources */,
+				F08B137D1C9F56BD00146F99 /* Comments.m in Sources */,
+				F08B13671C9F3D5F00146F99 /* Post+CoreDataProperties.m in Sources */,
+				F08B13871C9F56BD00146F99 /* Users+CoreDataProperties.m in Sources */,
+				F08B137F1C9F56BD00146F99 /* Address+CoreDataProperties.m in Sources */,
 				1F5DEBE71C994B0C006293F6 /* main.m in Sources */,
+				F08B13911C9F770D00146F99 /* Company.m in Sources */,
+				F08B13891C9F56BD00146F99 /* Users.m in Sources */,
+				F08B137B1C9F56BD00146F99 /* Comments+CoreDataProperties.m in Sources */,
+				F08B13811C9F56BD00146F99 /* Address.m in Sources */,
+				F08B13611C9F3CF500146F99 /* BabylonTest.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +397,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F08B138A1C9F56BD00146F99 /* Users.m in Sources */,
+				F08B13841C9F56BD00146F99 /* Geo+CoreDataProperties.m in Sources */,
 				1FDBB0C51C9BEBA60075A174 /* CoreDataTests.m in Sources */,
+				F08B137E1C9F56BD00146F99 /* Comments.m in Sources */,
+				F08B13821C9F56BD00146F99 /* Address.m in Sources */,
+				F08B13881C9F56BD00146F99 /* Users+CoreDataProperties.m in Sources */,
+				F08B13621C9F3CF500146F99 /* BabylonTest.xcdatamodeld in Sources */,
+				F08B13801C9F56BD00146F99 /* Address+CoreDataProperties.m in Sources */,
+				F08B137C1C9F56BD00146F99 /* Comments+CoreDataProperties.m in Sources */,
+				F08B13861C9F56BD00146F99 /* Geo.m in Sources */,
+				F08B13681C9F3D5F00146F99 /* Post+CoreDataProperties.m in Sources */,
+				F08B136A1C9F3D5F00146F99 /* Post.m in Sources */,
+				F08B13901C9F770D00146F99 /* Company+CoreDataProperties.m in Sources */,
+				F08B13921C9F770D00146F99 /* Company.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +620,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F08B135F1C9F3CF500146F99 /* BabylonTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F08B13601C9F3CF500146F99 /* BabylonTest.xcdatamodel */,
+			);
+			currentVersion = F08B13601C9F3CF500146F99 /* BabylonTest.xcdatamodel */;
+			name = BabylonTest.xcdatamodeld;
+			path = CoreData/BabylonTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1F5DEBDA1C994B0C006293F6 /* Project object */;
 }
