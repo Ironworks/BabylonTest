@@ -8,6 +8,8 @@ target 'BabylonTest' do
 end
 
 target 'BabylonTestTests' do
+    pod "OCMock"
+    pod "OHHTTPStubs"
 
 end
 

@@ -14,6 +14,7 @@
 		1F5DEBF21C994B0C006293F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F5DEBF11C994B0C006293F6 /* Assets.xcassets */; };
 		1F5DEBF51C994B0C006293F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5DEBF31C994B0C006293F6 /* LaunchScreen.storyboard */; };
 		1FDBB0C51C9BEBA60075A174 /* CoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDBB0C41C9BEBA60075A174 /* CoreDataTests.m */; };
+		5BD09F3F3084873ACB49AA28 /* libPods-BabylonTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E93434B6A7801206AB695B /* libPods-BabylonTestTests.a */; };
 		A41EC2BF033BBFA72E67EBCB /* libPods-BabylonTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECAF8A4C4ED2DBBE2AC1B596 /* libPods-BabylonTest.a */; };
 		F08B13611C9F3CF500146F99 /* BabylonTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F08B135F1C9F3CF500146F99 /* BabylonTest.xcdatamodeld */; };
 		F08B13621C9F3CF500146F99 /* BabylonTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F08B135F1C9F3CF500146F99 /* BabylonTest.xcdatamodeld */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DF86C14075C8087990C0625 /* Pods-BabylonTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BabylonTestTests/Pods-BabylonTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		1F5DEBE21C994B0C006293F6 /* BabylonTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BabylonTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5DEBE61C994B0C006293F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F5DEBE81C994B0C006293F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 		1FDBB0C41C9BEBA60075A174 /* CoreDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTests.m; sourceTree = "<group>"; };
 		1FE865951C9BED0100A78A72 /* libPods-BabylonTest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-BabylonTest.a"; path = "Pods/../build/Debug-iphoneos/libPods-BabylonTest.a"; sourceTree = "<group>"; };
 		292AE7BE345E9FE9B78F4B7E /* Pods-BabylonTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BabylonTest/Pods-BabylonTest.debug.xcconfig"; sourceTree = "<group>"; };
+		99E93434B6A7801206AB695B /* libPods-BabylonTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BabylonTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD9F890FAEB3D0C332564660 /* Pods-BabylonTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-BabylonTest/Pods-BabylonTest.release.xcconfig"; sourceTree = "<group>"; };
 		ECAF8A4C4ED2DBBE2AC1B596 /* libPods-BabylonTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BabylonTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F08B13601C9F3CF500146F99 /* BabylonTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BabylonTest.xcdatamodel; sourceTree = "<group>"; };
@@ -112,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BD09F3F3084873ACB49AA28 /* libPods-BabylonTestTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +127,7 @@
 			children = (
 				1FE865951C9BED0100A78A72 /* libPods-BabylonTest.a */,
 				ECAF8A4C4ED2DBBE2AC1B596 /* libPods-BabylonTest.a */,
+				99E93434B6A7801206AB695B /* libPods-BabylonTestTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 			children = (
 				292AE7BE345E9FE9B78F4B7E /* Pods-BabylonTest.debug.xcconfig */,
 				DD9F890FAEB3D0C332564660 /* Pods-BabylonTest.release.xcconfig */,
+				1DF86C14075C8087990C0625 /* Pods-BabylonTestTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -250,9 +256,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F5DEC071C994B0C006293F6 /* Build configuration list for PBXNativeTarget "BabylonTestTests" */;
 			buildPhases = (
+				AD04C01ADFECA98BD1AFB04B /* Check Pods Manifest.lock */,
 				1F5DEBF71C994B0C006293F6 /* Sources */,
 				1F5DEBF81C994B0C006293F6 /* Frameworks */,
 				1F5DEBF91C994B0C006293F6 /* Resources */,
+				E4F8AB08555BF75F497373F0 /* Embed Pods Frameworks */,
+				4A41D2C25D2AB74E7EC7BF33 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -322,6 +331,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4A41D2C25D2AB74E7EC7BF33 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BabylonTestTests/Pods-BabylonTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		706C9D74C1A3F4704D12111D /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -350,6 +374,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BabylonTest/Pods-BabylonTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD04C01ADFECA98BD1AFB04B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E4F8AB08555BF75F497373F0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BabylonTestTests/Pods-BabylonTestTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F56235962BA056661ED3495F /* Embed Pods Frameworks */ = {
@@ -573,6 +627,7 @@
 		};
 		1F5DEC091C994B0C006293F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DF86C14075C8087990C0625 /* Pods-BabylonTestTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
