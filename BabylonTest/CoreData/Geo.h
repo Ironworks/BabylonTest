@@ -1,14 +1,16 @@
 //
 //  Geo.h
-//  BabylonTest
+//  
 //
-//  Created by Trevor Doodes on 20/03/2016.
-//  Copyright © 2016 Ironworks Media Ltd. All rights reserved.
+//  Created by Trevor Doodes on 19/04/2016.
+//
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 #import <CoreLocation/CoreLocation.h>
+
+@class Users;
 
 NS_ASSUME_NONNULL_BEGIN
 

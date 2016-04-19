@@ -1,9 +1,9 @@
 //
 //  Company+CoreDataProperties.m
-//  BabylonTest
+//  
 //
-//  Created by Trevor Doodes on 21/03/2016.
-//  Copyright © 2016 Ironworks Media Ltd. All rights reserved.
+//  Created by Trevor Doodes on 19/04/2016.
+//
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
 //  to delete and recreate this implementation file for your updated model.
@@ -13,9 +13,9 @@
 
 @implementation Company (CoreDataProperties)
 
-@dynamic name;
-@dynamic catchPhrase;
 @dynamic bs;
+@dynamic catchPhrase;
+@dynamic name;
 @dynamic users;
 
 @end

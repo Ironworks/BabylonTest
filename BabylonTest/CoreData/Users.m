@@ -1,13 +1,14 @@
 //
 //  Users.m
-//  BabylonTest
+//  
 //
-//  Created by Trevor Doodes on 20/03/2016.
-//  Copyright © 2016 Ironworks Media Ltd. All rights reserved.
+//  Created by Trevor Doodes on 19/04/2016.
+//
 //
 
 #import "Users.h"
 #import "Address.h"
+#import "Company.h"
 #import "Geo.h"
 #import "Post.h"
 

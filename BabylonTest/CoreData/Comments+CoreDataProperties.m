@@ -1,9 +1,9 @@
 //
 //  Comments+CoreDataProperties.m
-//  BabylonTest
+//  
 //
-//  Created by Trevor Doodes on 20/03/2016.
-//  Copyright © 2016 Ironworks Media Ltd. All rights reserved.
+//  Created by Trevor Doodes on 19/04/2016.
+//
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
 //  to delete and recreate this implementation file for your updated model.
@@ -13,11 +13,11 @@
 
 @implementation Comments (CoreDataProperties)
 
-@dynamic postID;
+@dynamic body;
+@dynamic email;
 @dynamic id;
 @dynamic name;
-@dynamic email;
-@dynamic body;
+@dynamic postID;
 @dynamic post;
 
 @end

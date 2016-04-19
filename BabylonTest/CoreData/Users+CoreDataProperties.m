@@ -1,9 +1,9 @@
 //
 //  Users+CoreDataProperties.m
-//  BabylonTest
+//  
 //
-//  Created by Trevor Doodes on 20/03/2016.
-//  Copyright © 2016 Ironworks Media Ltd. All rights reserved.
+//  Created by Trevor Doodes on 19/04/2016.
+//
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
 //  to delete and recreate this implementation file for your updated model.
@@ -13,15 +13,16 @@
 
 @implementation Users (CoreDataProperties)
 
+@dynamic city;
+@dynamic email;
 @dynamic id;
 @dynamic name;
-@dynamic email;
-@dynamic city;
-@dynamic username;
 @dynamic phone;
+@dynamic username;
 @dynamic website;
-@dynamic posts;
-@dynamic location;
 @dynamic address;
+@dynamic company;
+@dynamic location;
+@dynamic posts;
 
 @end

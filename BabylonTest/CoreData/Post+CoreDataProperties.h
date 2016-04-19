@@ -1,9 +1,9 @@
 //
 //  Post+CoreDataProperties.h
-//  BabylonTest
+//  
 //
-//  Created by Trevor Doodes on 20/03/2016.
-//  Copyright © 2016 Ironworks Media Ltd. All rights reserved.
+//  Created by Trevor Doodes on 19/04/2016.
+//
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
 //  to delete and recreate this implementation file for your updated model.
@@ -13,14 +13,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class Comments;
 @interface Post (CoreDataProperties)
 
-@property (nullable, nonatomic, retain) NSString *userID;
-@property (nullable, nonatomic, retain) NSString *title;
 @property (nullable, nonatomic, retain) NSString *body;
-@property (nullable, nonatomic, retain) NSManagedObject *user;
+@property (nullable, nonatomic, retain) NSString *title;
+@property (nullable, nonatomic, retain) NSNumber *userID;
+@property (nullable, nonatomic, retain) NSNumber *id;
 @property (nullable, nonatomic, retain) NSSet<Comments *> *comments;
+@property (nullable, nonatomic, retain) Users *user;
 
 @end
 

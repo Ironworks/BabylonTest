@@ -38,13 +38,14 @@
     
     //Create a post
     self.myPost = [Post MR_createEntity];
-    self.myPost.userID = @"ABCD";
+    self.myPost.id  = @1;
+    self.myPost.userID = @1;
     self.myPost.title = @"My Post";
     self.myPost.body = @"Body";
     
     //Create a user
     self.myUser = [Users MR_createEntity];
-    self.myUser.id = @"ABCD";
+    self.myUser.id = @1;
     self.myUser.name = @"Name";
     self.myUser.username = @"Username";
     self.myUser.email = @"example@example.com";
@@ -60,8 +61,8 @@
     
     //Create a comment
     self.myComment = [Comments MR_createEntity];
-    self.myComment.postID = @"1";
-    self.myComment.id = @"ABCD";
+    self.myComment.postID = @1;
+    self.myComment.id = @1;
     self.myComment.email = @"example@example.com";
     self.myComment.body = @"Body";
     
@@ -90,7 +91,8 @@
 
 - (void)testCanCreatePost {
     XCTAssertNotNil(self.myPost, @"Should be able to create a post");
-    XCTAssertEqual(self.myPost.userID, @"ABCD", @"Should be able to set userID");
+    XCTAssertTrue([self.myPost.id isEqualToNumber:@1], @"Should be able to set id");
+    XCTAssertTrue([self.myPost.userID isEqualToNumber:@1], @"Should be able to set user ID");
     XCTAssertEqual(self.myPost.title, @"My Post", @"Should be able to set Title");
     XCTAssertEqual(self.myPost.body, @"Body", @"Should be able to set Body");
 
@@ -98,7 +100,7 @@
 
 - (void)testCanCreateUser {
     XCTAssertNotNil(self.myUser, @"Should be able to create a user");
-    XCTAssertEqual(self.myUser.id, @"ABCD", @"Should be able to set id");
+    XCTAssertTrue([self.myUser.id isEqualToNumber:@1], @"Should be able to set user id");
     XCTAssertEqual(self.myUser.username, @"Username", @"Should be able to set username");
     XCTAssertEqual(self.myUser.email, @"example@example.com");
     XCTAssertEqual(self.myUser.website, @"http://www.example.com");
@@ -115,8 +117,7 @@
 
 - (void)testCanCreateComment {
     XCTAssertNotNil(self.myComment, @"Should be able to create a comment");
-    XCTAssertEqual(self.myComment.postID, @"1", @"Should be able to set post ID");
-    XCTAssertEqual(self.myComment.id, @"ABCD", @"Should be able to set id");
+    XCTAssertTrue([self.myComment.id isEqualToNumber:@1], @"Should be able to set comment id");
     XCTAssertEqual(self.myComment.email, @"example@example.com", @"Should be able to set email");
     XCTAssertEqual(self.myComment.body, @"Body", @"Should be able to set comment body");
 }
