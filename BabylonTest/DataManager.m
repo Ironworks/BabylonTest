@@ -39,79 +39,101 @@
 
 - (void)saveUsers
 {
-    for (NSDictionary *dict in self.users) {
-        Users *newUser = [Users MR_createEntity];
-        newUser.id = dict[@"id"];
-        newUser.name = dict[@"name"];
-        newUser.email = dict[@"email"];
-        
-        NSDictionary *address = dict[@"address"];
-        Address *newAddress = [Address MR_createEntity];
-        newAddress.suite = address[@"suite"];
-        newAddress.street = address[@"street"];
-        newAddress.city = address[@"city"];
-        newAddress.zip = address[@"zipcode"];
-        newUser.address = newAddress;
-        newUser.phone = dict[@"phone"];
-        newUser.website = dict[@"website"];
-        
-        NSDictionary *geo = address[@"Geo"];
-        Geo *newGeo = [Geo MR_createEntity];
-        newGeo.latitude = geo[@"lat"];
-        newGeo.longitude = geo[@"lng"];
-        newUser.location = newGeo;
-        
-        NSDictionary *company = dict[@"company"];
-        Company *newCompany = [Company MR_createEntity];
-        newCompany.name = company[@"name"];
-        newCompany.catchPhrase = company[@"catchPhrase"];
-        newCompany.bs = company[@"bs"];
-        [newCompany addUsersObject:newUser];
-        
-        
-    }
     
-    [self retrievePosts];
+    [MagicalRecord saveWithBlock:^(NSManagedObjectContext * _Nonnull localContext) {
+        for (NSDictionary *dict in self.users) {
+            Users *newUser = [Users MR_createEntityInContext:localContext];
+            newUser.id = dict[@"id"];
+            newUser.name = dict[@"name"];
+            newUser.email = dict[@"email"];
+            
+            NSDictionary *address = dict[@"address"];
+            Address *newAddress = [Address MR_createEntityInContext:localContext];
+            newAddress.suite = address[@"suite"];
+            newAddress.street = address[@"street"];
+            newAddress.city = address[@"city"];
+            newAddress.zip = address[@"zipcode"];
+            newUser.address = newAddress;
+            newUser.phone = dict[@"phone"];
+            newUser.website = dict[@"website"];
+            
+            NSDictionary *geo = address[@"Geo"];
+            Geo *newGeo = [Geo MR_createEntityInContext:localContext];
+            newGeo.latitude = geo[@"lat"];
+            newGeo.longitude = geo[@"lng"];
+            newUser.location = newGeo;
+            
+            NSDictionary *company = dict[@"company"];
+            Company *newCompany = [Company MR_createEntityInContext:localContext];
+            newCompany.name = company[@"name"];
+            newCompany.catchPhrase = company[@"catchPhrase"];
+            newCompany.bs = company[@"bs"];
+            [newCompany addUsersObject:newUser];
+        }
+
+    } completion:^(BOOL contextDidSave, NSError * _Nullable error) {
+        [self retrievePosts];
+    }];
+    
 }
 
 - (void)savePosts {
     
-    for (NSDictionary *dict in self.posts) {
-        
-        //Create new post
-        Post *newPost = [Post MR_createEntity];
-        newPost.userID = dict[@"userId"];
-        newPost.id = dict[@"id"];
-        newPost.title = dict[@"title"];
-        newPost.body = dict[@"body"];
-        
-        //Get user for post
-        NSPredicate *filter = [NSPredicate predicateWithFormat:@"id == %@", newPost.userID];
-        Users *user = [Users MR_findFirstWithPredicate:filter];
-        [user addPostsObject:newPost];
-    }
+    [MagicalRecord saveWithBlock:^(NSManagedObjectContext * _Nonnull localContext) {
+        for (NSDictionary *dict in self.posts) {
+            
+            //Create new post
+            Post *newPost = [Post MR_createEntityInContext:localContext];
+            newPost.userID = dict[@"userId"];
+            newPost.id = dict[@"id"];
+            newPost.title = dict[@"title"];
+            newPost.body = dict[@"body"];
+            
+            //Get user for post
+            NSPredicate *filter = [NSPredicate predicateWithFormat:@"id == %@", newPost.userID];
+            Users *user = [Users MR_findFirstWithPredicate:filter inContext:localContext];
+            [user addPostsObject:newPost];
+        }
+
+    } completion:^(BOOL contextDidSave, NSError * _Nullable error) {
+        [self retrieveComments];
+    }];
     
-    [self retrieveComments];
+    
+
 }
 
 - (void)saveComments
 {
-    for (NSDictionary *dict in self.comments) {
+
+    [MagicalRecord saveWithBlock:^(NSManagedObjectContext * _Nonnull localContext) {
+        for (NSDictionary *dict in self.comments) {
+            
+            //Create new comment
+            Comments *newComment = [Comments MR_createEntityInContext:localContext];
+            newComment.postID = dict[@"postId"];
+            newComment.name = dict[@"name"];
+            newComment.email = dict[@"email"];
+            newComment.body = dict[@"body"];
+            
+            //Get post for comment
+            NSPredicate *filter = [NSPredicate predicateWithFormat:@"id == %@", newComment.postID];
+            Post *post = [Post MR_findFirstWithPredicate:filter inContext:localContext];
+            [post addCommentsObject:newComment];
+        }
+
+    } completion:^(BOOL contextDidSave, NSError * _Nullable error) {
         
-        //Create new comment
-        Comments *newComment = [Comments MR_createEntity];
-        newComment.postID = dict[@"postId"];
-        newComment.name = dict[@"name"];
-        newComment.email = dict[@"email"];
-        newComment.body = dict[@"body"];
-        
-        //Get post for comment
-        NSPredicate *filter = [NSPredicate predicateWithFormat:@"id == %@", newComment.postID];
-        Post *post = [Post MR_findFirstWithPredicate:filter];
-        [post addCommentsObject:newComment];
-    }
-    
-    //Save the data.
+        if (error) {
+            NSLog(@"Error occured");
+        } else {
+            NSArray *results = [self postsFromCoreData];
+            if (self.successBlock) {
+                self.successBlock(results);
+            }
+        }
+    }];
+
 }
 
 - (void)retrievePosts
