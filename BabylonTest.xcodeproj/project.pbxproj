@@ -17,6 +17,7 @@
 		A41EC2BF033BBFA72E67EBCB /* libPods-BabylonTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECAF8A4C4ED2DBBE2AC1B596 /* libPods-BabylonTest.a */; };
 		F08B13611C9F3CF500146F99 /* BabylonTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F08B135F1C9F3CF500146F99 /* BabylonTest.xcdatamodeld */; };
 		F08B13621C9F3CF500146F99 /* BabylonTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F08B135F1C9F3CF500146F99 /* BabylonTest.xcdatamodeld */; };
+		F0BA26E51CD8D0E2005A55FD /* PostsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BA26E41CD8D0E2005A55FD /* PostsDetailViewController.m */; };
 		F0F597A61CC61DC6009C7AEC /* comments.json in Resources */ = {isa = PBXBuildFile; fileRef = F0F597A31CC61DC5009C7AEC /* comments.json */; };
 		F0F597A71CC61DC6009C7AEC /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = F0F597A41CC61DC5009C7AEC /* posts.json */; };
 		F0F597A81CC61DC6009C7AEC /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = F0F597A51CC61DC5009C7AEC /* users.json */; };
@@ -85,6 +86,8 @@
 		DD9F890FAEB3D0C332564660 /* Pods-BabylonTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BabylonTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-BabylonTest/Pods-BabylonTest.release.xcconfig"; sourceTree = "<group>"; };
 		ECAF8A4C4ED2DBBE2AC1B596 /* libPods-BabylonTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BabylonTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F08B13601C9F3CF500146F99 /* BabylonTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BabylonTest.xcdatamodel; sourceTree = "<group>"; };
+		F0BA26E31CD8D0E2005A55FD /* PostsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostsDetailViewController.h; sourceTree = "<group>"; };
+		F0BA26E41CD8D0E2005A55FD /* PostsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostsDetailViewController.m; sourceTree = "<group>"; };
 		F0F597A31CC61DC5009C7AEC /* comments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = comments.json; sourceTree = "<group>"; };
 		F0F597A41CC61DC5009C7AEC /* posts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = posts.json; sourceTree = "<group>"; };
 		F0F597A51CC61DC5009C7AEC /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
@@ -287,6 +290,8 @@
 			children = (
 				F0F598621CCD5950009C7AEC /* PostsTableViewController.h */,
 				F0F598631CCD5950009C7AEC /* PostsTableViewController.m */,
+				F0BA26E31CD8D0E2005A55FD /* PostsDetailViewController.h */,
+				F0BA26E41CD8D0E2005A55FD /* PostsDetailViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -501,6 +506,7 @@
 				F0F5985C1CC67266009C7AEC /* Users.m in Sources */,
 				F0F597B81CC65665009C7AEC /* DataManager.m in Sources */,
 				F0F5984A1CC67266009C7AEC /* Address+CoreDataProperties.m in Sources */,
+				F0BA26E51CD8D0E2005A55FD /* PostsDetailViewController.m in Sources */,
 				F0F598521CC67266009C7AEC /* Company+CoreDataProperties.m in Sources */,
 				F0F598601CC67266009C7AEC /* Geo.m in Sources */,
 				F0F598641CCD5950009C7AEC /* PostsTableViewController.m in Sources */,

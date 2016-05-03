@@ -10,6 +10,7 @@
 #import "DataManager.h"
 #import "NetworkManager.h"
 #import "Post.h"
+#import "PostsDetailViewController.h"
 
 
 @interface PostsTableViewController ()
@@ -65,6 +66,20 @@
     return cell;
 }
 
+#pragma mark - Table View Delegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    [self performSegueWithIdentifier:@"detailSegue" sender:nil];
+}
 
+
+#pragma mark - Navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"detailSegue"]) {
+        PostsDetailViewController *vc = (PostsDetailViewController *)[segue destinationViewController];
+        vc.post = self.posts[[self.tableView indexPathForSelectedRow].row];
+    }
+}
 
 @end
